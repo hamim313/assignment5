@@ -16,15 +16,15 @@
         </div>
         <div class="flex h-15 flex-row ">
             <div class="flex p-4 mr-3 items-center rounded-4xl bg-[#b4ffc4]">
-                <p class="pr-2 font-bold">0</p>
+                <p id="heart-count" class="pr-2 font-bold">0</p>
                 <img class="h-12" src="./assets/heart.png" alt="">
             </div>
             <div class="flex p-4 items-center rounded-4xl bg-[#b4ffc4]">
-                <p class="pr-2 font-bold">100</p>
+                <p id="coin-count" class="pr-2 font-bold">100</p>
                 <img class="h-12" src="./assets/coin.png" alt="">
             </div>
             <div class="flex p-6 ml-3 items-center rounded-4xl bg-[#00851d]">
-                <p class="font-bold text-white text-xl"><span>0</span> Copy</p>
+                <p class="font-bold text-white text-xl"><span id="copy-count">0</span> Copy</p>
             </div>
     </nav>
 
@@ -39,20 +39,26 @@
             <div class="w-full p-3 shadow-md rounded-2xl bg-white">
                 <div class="h-8 mb-2 justify-between items-center flex">
                     <img class="h-full" src="./assets/emergency.png" alt="">
-                    <i class="fa-regular fa-heart"></i>
+                    <div id="heart-container-one">
+                        <i id="heart-icon-one" class="fa-regular fa-heart"></i>
+                    </div>
                 </div>
                 <p class="font-bold text-xl">National Emergency Number</p>
                 <p class="text-gray-500">National Emergency</p>
-                <p class="mt-2 font-bold text-3xl">999</p>
+                <p id="callNumber-one" class="mt-2 font-bold text-3xl">999</p>
                 <div class="flex w-[30%] mt-1 justify-center rounded-2xl bg-[#dfe9e1]">
                     <p class="font-bold text-gray-500">All</p>
                 </div>
                 <div class="flex mt-2 justify-between">
-                    <div class="flex w-[50%] cursor-pointer justify-center p-2 items-center border-1 border-gray-400 rounded-2xl bg-[#dfe9e1]">
-                        <i class="fa-regular fa-copy"></i>
-                        <p class="pl-2 font-bold text-gray-500">Copy</p>
+                    <div class="w-[50%]">
+                        <div id="netEmer-copy">
+                            <div class="flex cursor-pointer justify-center p-2 items-center border-1 border-gray-400 rounded-2xl bg-[#dfe9e1]">
+                                <i class="fa-regular fa-copy"></i>
+                                <p class="pl-2 font-bold text-gray-500">Copy</p>
+                            </div>
+                        </div>
                     </div>
-                    <div class="flex ml-3 w-[50%] cursor-pointer justify-center p-2 items-center rounded-2xl bg-[#00a321]">
+                    <div id="netEmer-call" class="flex ml-3 w-[50%] cursor-pointer justify-center p-2 items-center rounded-2xl bg-[#00a321]">
                         <i class="fa-solid fa-phone"></i>
                         <p class="pl-2 font-bold text-white">Call</p>
                     </div>
@@ -61,20 +67,27 @@
             <div class="w-full p-3 shadow-md rounded-2xl bg-white">
                 <div class="h-8 mb-2 justify-between items-center flex">
                     <img class="h-full" src="./assets/police.png" alt="">
-                    <i class="fa-regular fa-heart"></i>
+                    <div id="heart-container-two">
+                        <i id="heart-icon-two" class="fa-regular fa-heart"></i>
+                    </div>
                 </div>
                 <p class="font-bold text-2xl">Police Helpline Number</p>
                 <p class="text-gray-500">Police</p>
-                <p class="mt-2 font-bold text-3xl">999</p>
+                <p id="callNumber-two" class="mt-2 font-bold text-3xl">999</p>
                 <div class="flex w-[30%] mt-1 justify-center rounded-2xl bg-[#dfe9e1]">
                     <p class="font-bold text-gray-500">Police</p>
                 </div>
                 <div class="flex mt-2 justify-between">
-                    <div class="flex w-[50%] cursor-pointer justify-center p-2 items-center border-1 border-gray-400 rounded-2xl bg-[#dfe9e1]">
-                        <i class="fa-regular fa-copy"></i>
-                        <p class="pl-2 font-bold text-gray-500">Copy</p>
+                    <div class="w-[50%]">
+                        <div id="police-copy">
+                            <div class="flex cursor-pointer justify-center p-2 items-center border-1 border-gray-400 rounded-2xl bg-[#dfe9e1]">
+                                <i class="fa-regular fa-copy"></i>
+                                <p class="pl-2 font-bold text-gray-500">Copy</p>
+                            </div>
+                        </div>
                     </div>
-                    <div class="flex ml-3 w-[50%] cursor-pointer justify-center p-2 items-center rounded-2xl bg-[#00a321]">
+                    
+                    <div id="police-call" class="flex ml-3 w-[50%] cursor-pointer justify-center p-2 items-center rounded-2xl bg-[#00a321]">
                         <i class="fa-solid fa-phone"></i>
                         <p class="pl-2 font-bold text-white">Call</p>
                     </div>
@@ -83,20 +96,26 @@
             <div class="w-full p-3 shadow-md rounded-2xl bg-white">
                 <div class="h-8 mb-2 justify-between items-center flex">
                     <img class="h-full" src="./assets/fire-service.png" alt="">
-                    <i class="fa-regular fa-heart"></i>
+                    <div id="heart-container-three">
+                        <i id="heart-icon-three" class="fa-regular fa-heart"></i>
+                    </div>
                 </div>
                 <p class="font-bold text-2xl">Fire Service Number</p>
                 <p class="text-gray-500">Fire Service</p>
-                <p class="mt-2 font-bold text-3xl">999</p>
+                <p id="callNumber-three" class="mt-2 font-bold text-3xl">999</p>
                 <div class="flex w-[30%] mt-1 justify-center rounded-2xl bg-[#dfe9e1]">
                     <p class="font-bold text-gray-500">Fire</p>
                 </div>
                 <div class="flex mt-2 justify-between">
-                    <div class="flex w-[50%] cursor-pointer justify-center p-2 items-center border-1 border-gray-400 rounded-2xl bg-[#dfe9e1]">
-                        <i class="fa-regular fa-copy"></i>
-                        <p class="pl-2 font-bold text-gray-500">Copy</p>
+                    <div class="w-[50%]">
+                        <div id="FS-copy">
+                            <div class="flex cursor-pointer justify-center p-2 items-center border-1 border-gray-400 rounded-2xl bg-[#dfe9e1]">
+                                <i class="fa-regular fa-copy"></i>
+                                <p class="pl-2 font-bold text-gray-500">Copy</p>
+                            </div>
+                        </div>
                     </div>
-                    <div class="flex ml-3 w-[50%] cursor-pointer justify-center p-2 items-center rounded-2xl bg-[#00a321]">
+                    <div id="FS-call" class="flex ml-3 w-[50%] cursor-pointer justify-center p-2 items-center rounded-2xl bg-[#00a321]">
                         <i class="fa-solid fa-phone"></i>
                         <p class="pl-2 font-bold text-white">Call</p>
                     </div>
@@ -105,20 +124,27 @@
             <div class="w-full p-3 shadow-md rounded-2xl bg-white">
                 <div class="h-8 mb-2 justify-between items-center flex">
                     <img class="h-full" src="./assets/ambulance.png" alt="">
-                    <i class="fa-regular fa-heart"></i>
+                    <div id="heart-container-four">
+                        <i id="heart-icon-four" class="fa-regular fa-heart"></i>
+                    </div>
                 </div>
                 <p class="font-bold text-2xl">Ambulance Service</p>
                 <p class="text-gray-500">Ambulance</p>
-                <p class="mt-2 font-bold text-3xl">1994-999999</p>
+                <p id="callNumber-four" class="mt-2 font-bold text-3xl">1994-999999</p>
                 <div class="flex w-[30%] mt-1 justify-center rounded-2xl bg-[#dfe9e1]">
                     <p class="font-bold text-gray-500">Health</p>
                 </div>
                 <div class="flex mt-2 justify-between">
-                    <div class="flex w-[50%] cursor-pointer justify-center p-2 items-center border-1 border-gray-400 rounded-2xl bg-[#dfe9e1]">
-                        <i class="fa-regular fa-copy"></i>
-                        <p class="pl-2 font-bold text-gray-500">Copy</p>
+                    <div class="w-[50%]">
+                        <div id="ambu-copy">
+                            <div class="flex cursor-pointer justify-center p-2 items-center border-1 border-gray-400 rounded-2xl bg-[#dfe9e1]">
+                                <i class="fa-regular fa-copy"></i>
+                                <p class="pl-2 font-bold text-gray-500">Copy</p>
+                            </div>
+                        </div>
                     </div>
-                    <div class="flex ml-3 w-[50%] cursor-pointer justify-center p-2 items-center rounded-2xl bg-[#00a321]">
+                    
+                    <div id="ambu-call" class="flex ml-3 w-[50%] cursor-pointer justify-center p-2 items-center rounded-2xl bg-[#00a321]">
                         <i class="fa-solid fa-phone"></i>
                         <p class="pl-2 font-bold text-white">Call</p>
                     </div>
@@ -127,20 +153,28 @@
             <div class="w-full p-3 shadow-md rounded-2xl bg-white">
                 <div class="h-8 mb-2 justify-between items-center flex">
                     <img class="h-full" src="./assets/emergency.png" alt="">
-                    <i class="fa-regular fa-heart"></i>
+                    <div id="heart-container-five">
+                        <i id="heart-icon-five" class="fa-regular fa-heart"></i>
+                    </div>
                 </div>
                 <p class="font-bold text-2xl">Women & Child Helpline</p>
                 <p class="text-gray-500">Women & Child</p>
-                <p class="mt-2 font-bold text-3xl">109</p>
+                <p id="callNumber-five" class="mt-2 font-bold text-3xl">109</p>
                 <div class="flex w-[30%] mt-1 justify-center rounded-2xl bg-[#dfe9e1]">
                     <p class="font-bold text-gray-500">Help</p>
                 </div>
                 <div class="flex mt-2 justify-between">
-                    <div class="flex w-[50%] cursor-pointer justify-center p-2 items-center border-1 border-gray-400 rounded-2xl bg-[#dfe9e1]">
-                        <i class="fa-regular fa-copy"></i>
-                        <p class="pl-2 font-bold text-gray-500">Copy</p>
+                    <div class="w-[50%]">
+                        <div id="help-copy">
+                            <div class="flex cursor-pointer justify-center p-2 items-center border-1 border-gray-400 rounded-2xl bg-[#dfe9e1]">
+                                <i class="fa-regular fa-copy"></i>
+                                <p class="pl-2 font-bold text-gray-500">Copy</p>
+                            </div>
+                        </div>
                     </div>
-                    <div class="flex ml-3 w-[50%] cursor-pointer justify-center p-2 items-center rounded-2xl bg-[#00a321]">
+                    
+                    
+                    <div id="help-call" class="flex ml-3 w-[50%] cursor-pointer justify-center p-2 items-center rounded-2xl bg-[#00a321]">
                         <i class="fa-solid fa-phone"></i>
                         <p class="pl-2 font-bold text-white">Call</p>
                     </div>
@@ -149,20 +183,28 @@
             <div class="w-full p-3 shadow-md rounded-2xl bg-white">
                 <div class="h-8 mb-2 justify-between items-center flex">
                     <img class="h-full" src="./assets/emergency.png" alt="">
-                    <i class="fa-regular fa-heart"></i>
+                    <div id="heart-container-six">
+                        <i id="heart-icon-six" class="fa-regular fa-heart"></i>
+                    </div>
                 </div>
                 <p class="font-bold text-2xl">Anti-Corruption Helpline</p>
                 <p class="text-gray-500">Anti-Corruption</p>
-                <p class="mt-2 font-bold text-3xl">106</p>
+                <p id="callNumber-six" class="mt-2 font-bold text-3xl">106</p>
                 <div class="flex w-[30%] mt-1 justify-center rounded-2xl bg-[#dfe9e1]">
                     <p class="font-bold text-gray-500">Govt</p>
                 </div>
                 <div class="flex mt-2 justify-between">
-                    <div class="flex w-[50%] cursor-pointer justify-center p-2 items-center border-1 border-gray-400 rounded-2xl bg-[#dfe9e1]">
-                        <i class="fa-regular fa-copy"></i>
-                        <p class="pl-2 font-bold text-gray-500">Copy</p>
+                    <div class="w-[50%]">
+                        <div id="govt-copy">
+                            <div class="flex cursor-pointer justify-center p-2 items-center border-1 border-gray-400 rounded-2xl bg-[#dfe9e1]">
+                                <i class="fa-regular fa-copy"></i>
+                                <p class="pl-2 font-bold text-gray-500">Copy</p>
+                            </div>
+                        </div>
                     </div>
-                    <div class="flex ml-3 w-[50%] cursor-pointer justify-center p-2 items-center rounded-2xl bg-[#00a321]">
+                    
+                    
+                    <div id="govt-call" class="flex ml-3 w-[50%] cursor-pointer justify-center p-2 items-center rounded-2xl bg-[#00a321]">
                         <i class="fa-solid fa-phone"></i>
                         <p class="pl-2 font-bold text-white">Call</p>
                     </div>
@@ -171,20 +213,28 @@
             <div class="w-full p-3 shadow-md rounded-2xl bg-white">
                 <div class="h-8 mb-2 justify-between items-center flex">
                     <img class="h-full" src="./assets/emergency.png" alt="">
-                    <i class="fa-regular fa-heart"></i>
+                    <div id="heart-container-seven">
+                        <i id="heart-icon-seven" class="fa-regular fa-heart"></i>
+                    </div>
                 </div>
                 <p class="font-bold text-2xl">Electricity Helpline</p>
                 <p class="text-gray-500">Electricity Outage</p>
-                <p class="mt-2 font-bold text-3xl">16216</p>
+                <p id="callNumber-seven" class="mt-2 font-bold text-3xl">16216</p>
                 <div class="flex w-[30%] mt-1 justify-center rounded-2xl bg-[#dfe9e1]">
                     <p class="font-bold text-gray-500">Electricity</p>
                 </div>
                 <div class="flex mt-2 justify-between">
-                    <div class="flex w-[50%] cursor-pointer justify-center p-2 items-center border-1 border-gray-400 rounded-2xl bg-[#dfe9e1]">
-                        <i class="fa-regular fa-copy"></i>
-                        <p class="pl-2 font-bold text-gray-500">Copy</p>
+                    <div class="w-[50%]">
+                        <div id="EH-copy">
+                            <div class="flex cursor-pointer justify-center p-2 items-center border-1 border-gray-400 rounded-2xl bg-[#dfe9e1]">
+                                <i class="fa-regular fa-copy"></i>
+                                <p class="pl-2 font-bold text-gray-500">Copy</p>
+                            </div>
+                        </div>
                     </div>
-                    <div class="flex ml-3 w-[50%] cursor-pointer justify-center p-2 items-center rounded-2xl bg-[#00a321]">
+                    
+                    
+                    <div id="EH-call" class="flex ml-3 w-[50%] cursor-pointer justify-center p-2 items-center rounded-2xl bg-[#00a321]">
                         <i class="fa-solid fa-phone"></i>
                         <p class="pl-2 font-bold text-white">Call</p>
                     </div>
@@ -193,20 +243,28 @@
             <div class="w-full p-3 shadow-md rounded-2xl bg-white">
                 <div class="h-8 mb-2 justify-between items-center flex">
                     <img class="h-full" src="./assets/brac.png" alt="">
-                    <i class="fa-regular fa-heart"></i>
+                    <div id="heart-container-eight">
+                        <i id="heart-icon-eight" class="fa-regular fa-heart"></i>
+                    </div>
                 </div>
                 <p class="font-bold text-2xl">Brac Helpline</p>
                 <p class="text-gray-500">Brac</p>
-                <p class="mt-2 font-bold text-3xl">16445</p>
+                <p id="callNumber-eight" class="mt-2 font-bold text-3xl">16445</p>
                 <div class="flex w-[30%] mt-1 justify-center rounded-2xl bg-[#dfe9e1]">
                     <p class="font-bold text-gray-500">NGO</p>
                 </div>
                 <div class="flex mt-2 justify-between">
-                    <div class="flex w-[50%] cursor-pointer justify-center p-2 items-center border-1 border-gray-400 rounded-2xl bg-[#dfe9e1]">
-                        <i class="fa-regular fa-copy"></i>
-                        <p class="pl-2 font-bold text-gray-500">Copy</p>
+                    <div class="w-[50%]">
+                        <div id="NGO-copy">
+                            <div class="flex cursor-pointer justify-center p-2 items-center border-1 border-gray-400 rounded-2xl bg-[#dfe9e1]">
+                                <i class="fa-regular fa-copy"></i>
+                                <p class="pl-2 font-bold text-gray-500">Copy</p>
+                            </div>
+                        </div>
                     </div>
-                    <div class="flex ml-3 w-[50%] cursor-pointer justify-center p-2 items-center rounded-2xl bg-[#00a321]">
+                    
+                    
+                    <div id="NGO-call" class="flex ml-3 w-[50%] cursor-pointer justify-center p-2 items-center rounded-2xl bg-[#00a321]">
                         <i class="fa-solid fa-phone"></i>
                         <p class="pl-2 font-bold text-white">Call</p>
                     </div>
@@ -215,20 +273,28 @@
             <div class="w-full p-3 shadow-md rounded-2xl bg-white">
                 <div class="h-8 mb-2 justify-between items-center flex">
                     <img class="h-full" src="./assets/Bangladesh-Railway.png" alt="">
-                    <i class="fa-regular fa-heart"></i>
+                    <div id="heart-container-nine">
+                        <i id="heart-icon-nine" class="fa-regular fa-heart"></i>
+                    </div>
                 </div>
                 <p class="font-bold text-xl">Bangladesh Railway Helpline</p>
                 <p class="text-gray-500">Bangladesh Railway</p>
-                <p class="mt-2 font-bold text-3xl">163</p>
+                <p id="callNumber-nine" class="mt-2 font-bold text-3xl">163</p>
                 <div class="flex w-[30%] mt-1 justify-center rounded-2xl bg-[#dfe9e1]">
                     <p class="font-bold text-gray-500">Travel</p>
                 </div>
                 <div class="flex mt-2 justify-between">
-                    <div class="flex w-[50%] cursor-pointer justify-center p-2 items-center border-1 border-gray-400 rounded-2xl bg-[#dfe9e1]">
-                        <i class="fa-regular fa-copy"></i>
-                        <p class="pl-2 font-bold text-gray-500">Copy</p>
+                    <div class="w-[50%]">
+                        <div id="BR-copy">
+                            <div class="flex cursor-pointer justify-center p-2 items-center border-1 border-gray-400 rounded-2xl bg-[#dfe9e1]">
+                                <i class="fa-regular fa-copy"></i>
+                                <p class="pl-2 font-bold text-gray-500">Copy</p>
+                            </div>
+                        </div>
                     </div>
-                    <div class="flex ml-3 w-[50%] cursor-pointer justify-center p-2 items-center rounded-2xl bg-[#00a321]">
+                    
+                    
+                    <div id="BR-call" class="flex ml-3 w-[50%] cursor-pointer justify-center p-2 items-center rounded-2xl bg-[#00a321]">
                         <i class="fa-solid fa-phone"></i>
                         <p class="pl-2 font-bold text-white">Call</p>
                     </div>
@@ -237,20 +303,21 @@
         </div>
 
         <div class="w-[25%] bg-white rounded-2xl shadow-md ml-5 mr-5">
-            <div class="h-[52px] bg-gray-200 rounded-md m-4 p-3 flex items-center justify-between">
+            <div class="h-[60px] bg-gray-200 rounded-md m-4 p-3 flex items-center justify-between">
                 <div class="flex items-center">
                     <i class="fa-regular fa-clock mr-2"></i>
                     <p class="font-bold text-lg">Call History</p>
                 </div>
-                <div class="flex w-[30%] cursor-pointer justify-center p-2 items-center rounded-3xl bg-[#00a321]">
+                <div id="clear-button" class="flex w-[30%] cursor-pointer justify-center p-2 items-center rounded-3xl bg-[#00a321]">
                     <p class="pl-2 font-bold text-white">Clear</p>
                 </div>
             </div>
-            <div class="h-[52px] bg-gray-200 rounded-md mt-1 mb-1 ml-4 mr-4 p-3 flex items-center justify-between">
-                <p class="font-semibold text-md">Fire Service Number <br> <span class="text-gray-500">999</span></p>
-                <p class="text-gray-600">11:36:58 AM</p>
+            <div id="history-container">
+
             </div>
         </div>
     </div>
+
+    <script src="home.js"></script>
 </body>
 </html>
